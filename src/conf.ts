@@ -3,7 +3,7 @@
  * 作者: VcrTing
  */
 
-export const VERSION = '1.3'
+export const VERSION = '1.31'
 
 export const TEST = true
 
