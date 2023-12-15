@@ -3,14 +3,14 @@
  * 作者: VcrTing
  */
 
-export const VERSION = '1.32'
+export const VERSION = '1.33'
 
 export const TEST = false
 
 export const COMPANY = {
     
     // 没什么用
-    name: '886HK',
+    name: 'GloriousTeddy',
 
     // 对接 strapi 的后台 LINK
     // 具体 配置 请看 conf/net/net-conf.ts

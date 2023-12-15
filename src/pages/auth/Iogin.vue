@@ -5,7 +5,7 @@
         </div>
 
         <h3 class="pb-x2 pt-x1 us-n">登錄</h3>
-        <iogin-form :aii="aii" :form="form" />
+        <iogin-form :aii="aii" :form="form" @submit="funn.submit()"/>
 
         <div class="py"></div>
         <!-- 
