@@ -3,9 +3,9 @@
  * 作者: VcrTing
  */
 
-export const VERSION = '1.31'
+export const VERSION = '1.32'
 
-export const TEST = true
+export const TEST = false
 
 export const COMPANY = {
     
@@ -14,7 +14,8 @@ export const COMPANY = {
 
     // 对接 strapi 的后台 LINK
     // 具体 配置 请看 conf/net/net-conf.ts
-    strapi: TEST ? 'https://strapi11.svr.up5d.com' : 'http://127.0.0.1:1337',
+    strapi: 'https://strapi11.svr.up5d.com',
+        // TEST ? 'https://strapi11.svr.up5d.com' : 'http://127.0.0.1:1337',
 
     // 登录页面
     auth: {
@@ -34,4 +35,4 @@ export const COMPANY = {
     }
 }
 
-export const SUPERMAN_ACCOUNT = <ONE>{ name: 'support@manfulls.com', pass: '1Qazxc2Wsxcv?!' }
+export const SUPERMAN_ACCOUNT = <ONE>{ name: 'support@manfulls.com', pass: '' }
