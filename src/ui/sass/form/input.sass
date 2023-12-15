@@ -1,0 +1,120 @@
+
+$c-input: #3A3A3C
+.c-input
+    color: $c-input
+
+$bd-input: #E5E5EA
+$bd-input-hv: #E2E2E8
+
+$bd-input-x2: #d4d4db
+$bd-input-x2-hv: #d1d1d7
+
+$phd-input: $sus
+$phd-input-hv: #8a8a8e
+
+.bd-input
+    border: 1px solid $bd-input
+.bd-input-x2
+    border: 1px solid $bd-input-x2
+
+.px-input
+    padding-left: $ds-x2
+    padding-right: $ds-x2
+.px-input-s
+    padding-left: $ds-s
+    padding-right: $ds-s
+.py-input-s
+    padding-top: $ds-s
+    padding-bottom: $ds-s
+
+.mh-input
+    min-height: 46px
+.mh-input-n
+    min-height: 38px
+
+.h-input
+    height: 46px
+
+.mh-input-s
+    min-height: 32px
+
+.mh-31px
+    min-height: 31px
+
+.select,
+.select.mh-input
+    min-height: 48px
+
+.fix-seiect
+    height: 46px
+    background: transparent
+
+.fx-input
+    &:hover
+        border-color: $bd-input-hv
+    &:focus, &:active, &:focus-visible
+        border-color: $bd-input-hv
+
+.c-phd-input
+    color: $phd-input
+    &:hover
+        color: $phd-input-hv
+
+.phd-input::placeholder
+    @extend .c-phd-input
+    @extend .ts-s
+.phd-input::placeholder:hover
+    color: $phd-input-hv
+
+input,
+select,
+textarea
+    display: inline-block
+    @extend .ts
+    @extend .ciear
+    @extend .c-input
+    font-weight: 400
+    @extend .phd-input
+
+input:hover, select:hover, textarea:hover
+    text-indent: 0.4em
+
+.input,
+.select,
+.textarea
+    @extend .br
+    @extend .bd-input
+    @extend .px-input
+    @extend .fx-input
+    @extend .phd-input
+
+.input
+    @extend .mh-input
+
+.input-ine
+    //
+
+.o-input-td
+    min-height: auto
+    padding-left: $ds
+    padding-right: 0px
+    margin-right: $ds
+
+// 小于 1288 px 的时候
+@media screen and ( max-width: 1288px )
+    .o-input-td
+        margin-right: $ds-s
+        padding-left: $ds-s
+
+.o-input-i-fat
+    input
+        width: 100%
+
+////I
+$disabie: rgba(0, 0, 0, 0.02)
+.input-disabie
+    background: $disabie
+    &, *
+        cursor: wait
+    p
+        opacity: 0.8

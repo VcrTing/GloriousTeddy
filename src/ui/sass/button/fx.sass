@@ -1,0 +1,65 @@
+
+.fx-shd-pri
+    &:focus, &:active, &:focus-visible
+        box-shadow: 0px 0px 0px 3px $btn-pri-shd
+
+.fx-hv-pri
+    &:hover
+        background: $btn-pri-hv
+        &, i
+            color: $btn-pri-wht
+
+.fx-hv-pri-bd
+    &:hover
+        border-color: $btn-pri
+
+.fx-fcs-pri
+    &:focus, &:active, &:focus-visible
+        color: $btn-pri-wht
+        background: $btn-pri-fcs
+
+///   
+.fx-hv-die
+    &:hover
+        background: $btn-die-hv
+        &, i
+            color: $btn-pri-wht
+.fx-fcs-die
+    &:focus, &:active, &:focus-visible
+        background: $btn-die-fcs
+        &, i
+            color: $btn-pri-wht
+
+// TAB
+.fx-hv-tab
+    &:hover
+        background: $btn-tab-hv
+.fx-fcs-tab
+    &:focus, &:active, &:focus-visible
+        background: $btn-tab-fcs
+.fx-shd-tab
+    &:focus, &:active, &:focus-visible
+        box-shadow: 0px 0px 0px 3px $btn-tab-shd
+
+.fx-aii-tab
+    @extend .fx-hv-tab
+    @extend .fx-fcs-tab
+    @extend .fx-shd-tab
+
+// WEAK
+.fx-hv-weak
+    &:hover
+        background: $btn-weak-hv
+.fx-fcs-weak
+    &:focus, &:active, &:focus-visible
+        background: $btn-weak-fcs
+.fx-shd-weak
+    &:focus, &:active, &:focus-visible
+        box-shadow: 0px 0px 0px 3px $btn-weak-shd
+
+.fx-aii-weak
+    @extend .fx-hv-weak
+    @extend .fx-fcs-weak
+    @extend .fx-shd-weak
+
+//

@@ -1,0 +1,60 @@
+
+// 紅操作
+
+$err: #FF3B30
+$err-hv: #f63329
+$err-fcs: #f12c21
+
+$err-iht: #fef5f4
+
+.fx-hv-err:hover
+    color: $err-hv
+
+.fx-fcs-err
+    &:focus, &:active, &:focus-visible
+        color: $err-fcs
+
+.fx-fcs-bg-err
+    &:focus, &:active, &:focus-visible
+        background: $err-iht
+
+.err
+    color: $err !important
+
+.txt-err
+    @extend .err
+    @extend .hand
+    @extend .fx-hv-err
+    @extend .fx-fcs-err
+
+$warning: rgb(255, 44, 85)
+$warning-hv: rgb(248, 37, 79)
+$warning-fcs: rgb(243, 34, 76)
+.btn-warning
+    @extend .br-s
+    color: $pri-wht
+    background: $warning !important
+    &:hover
+        background: $warning-hv !important
+    &:focus, &:active, &:focus-visible
+        background: $warning-fcs !important
+
+
+// 金錢
+$money: #FF2D55
+$money-hv: #f6234a
+$money-fcs: #eb1e44
+
+.fx-hv-money:hover
+    color: $money-hv
+
+.fx-fcs-money:focus, .fx-fcs-money:active, .fx-fcs-money:focus-visible
+    color: $money-fcs
+
+.money
+    color: $money
+
+.txt-money
+    @extend .money
+    @extend .fx-hv-money
+    @extend .fx-fcs-money

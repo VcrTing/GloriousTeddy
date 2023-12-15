@@ -1,0 +1,16 @@
+$fonts: ( 'tit': $tit, 'tis': $tis, 'ttd': $ttd, 'sub': $sub, 'sut': $sut, 'sus': $sus, 'wht': $wht, 'pri': $pri, 'pri-wht': $pri-wht, 'tdc': $tdc )
+
+@each $k, $v in $fonts
+    .#{$k}
+        color: $v
+    .#{$k}-son, .#{$k}-son *
+        color: $v
+    .#{$k}-hv:hover
+        color: $v
+     
+
+// 其他文字顏色
+.refund
+    color: #717172
+    &:hover
+        color: #666667

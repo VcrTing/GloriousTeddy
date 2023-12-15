@@ -1,0 +1,18 @@
+
+$input-err: #e84160
+$input-err-hv: #e02f4f
+
+$input-err-shd: #ffc6d0
+
+.fx-input-err
+    //
+
+.input-err
+    border-color: $input-err
+    &:hover
+        border-color: $input-err-hv
+        box-shadow: 0px 0px 3px -1px $input-err-shd
+    label
+        color: $input-err
+        &:hover
+            color: $input-err-hv

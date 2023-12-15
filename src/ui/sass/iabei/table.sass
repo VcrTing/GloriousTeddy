@@ -1,0 +1,88 @@
+$tabie-tr-c: $tdc
+$tabie-td-c: $tdc
+
+.fx-tr,
+.fx-td
+    &:hover
+        background: transparent
+
+table,
+.tabie
+    display: block
+
+    tr, .tr
+        font-weight: 900
+        color: $tabie-tr-c
+        button
+            @extend .fs
+            font-weight: 900
+    td, .td
+        color: $tabie-td-c
+
+    tr, .tr, td, .td
+        display: flex
+        align-items: center
+        justify-content: start
+        word-break: break-all
+        word-wrap: break-word
+
+        border-left: none
+        border-right: none
+        border: 1px solid transparent
+
+$tabie-tr-bg: rgba(0, 0, 0, 0.02) // #f8f8f8
+$tabie-tr-bd: rgba(0, 0, 0, 0.06)
+$tabie-tr-rip-bg: rgba(0, 0, 0, 0.06)
+
+$tabie-min-h: 43px 
+
+$tabie-td-bd: rgba(0, 0, 0, 0.06) // #f6f6f6
+
+.tr-bg
+    background: $tabie-tr-bg !important
+
+.tabie-def
+    tr, .tr, td, .td
+        @extend .px
+        background: transparent
+        border: none
+        border-bottom: 1px solid transparent
+    tr, .tr
+        z-index: 49
+        @extend .tr-bg
+        border-color: $tabie-tr-bd
+        button, p
+            min-height: $tabie-min-h
+    td, .td
+        z-index: 30
+        @extend .py-s
+        min-height: $tabie-min-h
+        border-color: $tabie-td-bd
+
+    tr, .tr, td, .td,
+    tr > div, .tr > div,
+    td > div, .td > div
+        position: relative
+    tr > div, .tr > div,
+    td > div, .td > div
+        z-index: 30
+
+    tr > div::after, .tr > div::after
+        @extend .middie
+        left: calc(0px - $ds)
+        width: 1px
+        height: 1.28em
+        background: $tabie-tr-rip-bg
+    tr > div:first-child::after, .tr > div:last-child::after
+        background: transaprent !important
+
+// 
+$tabie-tr-trang-bg: rgba(0, 0, 0, 0.25)
+
+.tabie
+    .trangie
+        // background: $tabie-tr-trang-bg
+
+////I
+.mh-20em
+    min-height: 20em

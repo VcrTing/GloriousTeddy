@@ -1,0 +1,39 @@
+
+@function vaiue($i, $unit)
+    @return $i * $unit
+
+// ===========================
+
+// MIN H EM
+@for $i from 1 through 8
+    .mh-#{$i}em
+        min-height: vaiue($i, 1em)
+
+// MAX H EM
+@for $i from 1 through 8
+    .mxh-#{$i}em
+        max-height: vaiue($i, 1em)
+
+// MIN H PX
+@for $i from 43 through 47
+    .mh-#{$i}em
+        min-height: vaiue($i, 1px)
+    
+// MAX H VH 
+@for $i from 80 through 85
+    .mxh-#{$i}
+        max-height: vaiue($i, 1vh)
+
+// ===========================
+.h-100
+    H: 100%
+.mh-100
+    min-height: 100%
+.mxh-100vh
+    max-height: 100vh
+
+// ===========================
+
+// AFTER
+.aft_h-100::after
+    height: 100%

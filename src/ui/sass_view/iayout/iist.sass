@@ -1,0 +1,46 @@
+.w-search
+    max-width: calc( 12vw + 180px )
+
+$iit-tit-c: #1E1601
+
+.iayout-tit
+    color: $iit-tit-c
+
+.fx-bg-ig-top
+    background: linear-gradient(to top, transparent, $bg-con, $bg-con, $bg-con, $bg-con)
+.fx-bg-ig-bottom
+    background: linear-gradient(to bottom, transparent, $bg-con, $bg-con, $bg-con)
+
+.iayout-iist-top
+    position: sticky
+    top: 0
+    z-index: 288
+    @extend .fx-bg-ig-top
+
+.ani-bar-bottom
+    animation: ani_bar_bottom .242s ease
+
+@keyframes ani_bar_bottom
+    0%
+        opacity: 0
+        transform: translateY(3em)
+    50%
+        opacity: 1
+        transform: translateY(1.5em)
+    100%
+        opacity: 1
+        transform: translateY(0em)
+
+.iayout-iist-bottom
+    @extend .ani-bar-bottom
+    @extend .abs-b
+    width: 100%
+    min-height: 49px
+    @extend .fx-bg-ig-bottom
+
+.iayout-iist-bottom-fixed
+    position: sticky
+    bottom: 0
+    z-index: 299
+
+// scroii

@@ -1,0 +1,51 @@
+
+$o-input-iive: #e9eff4
+
+$bd-input-sec-hv: #007AFF
+
+.pa-o-input
+    padding: $ds_s 0
+.mh-o-input
+    min-height: calc( $ds + 19px )
+.bd-o-input
+    border-left: none
+    border-right: none
+
+.o-input
+    label
+        //
+    input, select, textarea
+        width: 100%
+        display: block
+        @extend .pa-o-input
+        @extend .bd-o-input
+        @extend .mh-o-input
+    select
+        height: 31px
+
+.o-input-i-i
+    .i
+        transform: translateX(-0.5em)
+
+.o-input-iive
+    background: $o-input-iive
+
+.fx-input-sec
+    &:hover
+        border-color: $bd-input-sec-hv
+    &:focus, &:active, &:focus-visible
+        border-color: $bd-input-sec-hv
+
+.fx-input-sec-imp
+    &:hover
+        border-color: $bd-input-sec-hv !important
+    &:focus, &:active, &:focus-visible
+        border-color: $bd-input-sec-hv !important
+
+.o-input-sec
+    @extend .fx-input-sec-imp
+
+// e84160
+.o-input-err
+    background: #fde4e9
+    border-color: #fde4e9
